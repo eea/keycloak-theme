@@ -6,36 +6,63 @@
 }
 
 .login-pf body {
-    background: url("../img/keycloak-bg.png") no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
+    background: #ffffff;
 }
 
 /*IE compatibility*/
-.pf-c-form-control {
-    font-size: 14px;
-    font-size: var(--pf-global--FontSize--sm);
-    border-width: 1px;
-    border-width: var(--pf-global--BorderWidth--sm);;
-    border-color: #EDEDED #EDEDED #8A8D90 #EDEDED;
-    border-color: var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--200) var(--pf-global--BorderColor--300);
+
+.pf-c-form__label-text{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.pf-c-form-control{
+    font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 0.95em;
+    font-weight: 400;
+    color: rgba(0,0,0,0.87);
+    border: 1px solid #c7d5d8;
+    border-width: 0 0 0.07rem;
+    border-radius: 0;
     background-color: #FFFFFF;
     background-color: var(--pf-global--BackgroundColor--100);
-    height: 36px;
-    height: calc(var(--pf-c-form-control--FontSize) * var(--pf-c-form-control--LineHeight) + var(--pf-c-form-control--BorderWidth) * 2 + var(--pf-c-form-control--PaddingTop) + var(--pf-c-form-control--PaddingBottom));
-    padding: 5px 0.5rem;
-    padding: var(--pf-c-form-control--PaddingTop) var(--pf-c-form-control--PaddingRight) var(--pf-c-form-control--PaddingBottom) var(--pf-c-form-control--PaddingLeft);
+    height: 60px;
+    margin-top: 1.35rem;
+    padding: 0 0 1.35em 0;
+    box-shadow: inset 0 0 0 0 transparent;
+}
+
+.pf-c-form-control:-webkit-autofill, .pf-c-form-control:-webkit-autofill:hover, .pf-c-form-control:-webkit-autofill:focus{
+    font-weight: 300;
+    margin-top: 0;
+    padding: 1.85em 0;
+    box-shadow: inset 0 0 0 100px ivory;
+    border-color: #e5dfa1;
 }
 
 textarea.pf-c-form-control {
-	height: auto;
+    height: auto;
+}
+
+.pf-c-form-control:focus::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.pf-c-form-control:focus:-ms-input-placeholder{
+    color: rgba(0,0,0,0.5);
+}
+
+.pf-c-form-control:focus::-ms-input-placeholder{
+    color: rgba(0,0,0,0.5);
 }
 
 .pf-c-form-control:hover, .pf-c-form-control:focus {
-    border-bottom-color: #0066CC;
-    border-bottom-color: var(--pf-global--primary-color--100);
-    border-bottom-width: 2px;
-    border-bottom-width: var(--pf-global--BorderWidth--md);
+    margin-top: 1.35rem;
+    padding: 0 0 1.35em 0;
+    border-bottom-color: #c7d5d8;
+    border-bottom-width: 1px;
+    outline: none;
 }
 
 .pf-c-form-control[aria-invalid="true"] {
@@ -167,7 +194,19 @@ textarea.pf-c-form-control {
 }
 /*End of IE compatibility*/
 h1#kc-page-title {
-    margin-top: 10px;
+    border-bottom: 0.3rem solid #C7D5D8;
+    padding: 1.2em 1em;
+    margin: 0;
+    text-align: left;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+h2#kc-page-title-two {
+    padding: 1.2em 1em;
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 #kc-locale ul {
@@ -216,11 +255,11 @@ a#kc-current-locale-link::after {
 }
 
 div.kc-logo-text {
-    background-image: url(../img/keycloak-logo-text.png);
+    /* background-image: url(../img/keycloak-logo-text.png);
     background-repeat: no-repeat;
     height: 63px;
     width: 300px;
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 div.kc-logo-text span {
@@ -287,12 +326,9 @@ div.kc-logo-text span {
     margin: -1px 0;
 }
 
-#kc-content-wrapper {
-    margin-top: 20px;
-}
-
 #kc-form-wrapper {
-    margin-top: 10px;
+    font-size: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 #kc-info {
@@ -580,6 +616,18 @@ ul#kc-totp-supported-apps {
     width: 40%;
 }
 
+.login-pf-page .login-pf-settings {
+    justify-content: left;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #edf1f2;
+}
+
+#kc-form-forgotPassword a {
+  color: #004073;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
 /* Internet Explorer 11 compatibility workaround for select-authenticator screen */
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
@@ -653,12 +701,16 @@ ul#kc-totp-supported-apps {
 
 .card-pf {
     margin: 0 auto;
-    box-shadow: var(--pf-global--BoxShadow--lg);
-    padding: 0 20px;
-    max-width: 500px;
-    border-top: 4px solid;
-    border-color: #0066CC; /* default - IE compatibility */
-    border-color: var(--pf-global--primary-color--100);
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+    border: 1px solid #c7d5d8;
+    padding: 0 !important;
+    max-width: 376px;
+}
+
+@media (min-width: 768px) {
+    .login-pf-page .login-pf-header {
+        margin-bottom: 0;
+    }
 }
 
 /*phone*/
