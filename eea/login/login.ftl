@@ -67,6 +67,24 @@
                       <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
                       <input tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                   </div>
+
+<div class="ui clearing segment actions">
+
+<a id="login-form-cancel" aria-label="Cancel" title="Cancel" class="ui basic secondary right floated button" role="button" href="/">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="height:30px;width:auto;fill:currentColor" class="icon circled">
+<path fill-rule="evenodd" d="M27.899 9.515L26.485 8.101 18 16.586 9.514 8.101 8.1 9.515 16.586 18 8.1 26.486 9.514 27.9 18 19.414 26.485 27.9 27.899 26.486 19.414 18z"></path>
+</svg>
+</a>
+
+<button type="submit" id="login-form-submit" aria-label="Log in" title="Log in" class="ui basic primary right floated button">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="height:30px;width:auto;fill:currentColor" class="icon circled">
+<path fill-rule="evenodd" d="M18.707 5.293L17.293 6.707 27.586 17 5 17 5 19 27.586 19 17.293 29.293 18.707 30.707 31.414 18z"></path>
+</svg>
+</button>
+
+</div>
+
+
             </form>
         </#if>
         </div>

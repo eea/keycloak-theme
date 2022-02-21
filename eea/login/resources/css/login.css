@@ -11,6 +11,15 @@
 
 /*IE compatibility*/
 
+.eea-logo{
+   height: 45px;
+}
+
+.eu-flag{
+    width: 60px;
+    height: 38px;
+}
+
 .pf-c-form__label-text{
     font-size: 1rem;
     font-weight: 500;
@@ -266,19 +275,12 @@ div.kc-logo-text span {
     display: none;
 }
 
-#kc-header {
-    color: #ededed;
-    overflow: visible;
-    white-space: nowrap;
-}
-
-#kc-header-wrapper {
-    font-size: 29px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 1.2em;
-    padding: 62px 10px 20px;
-    white-space: normal;
+#kc-header #kc-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0 2rem 0;
+    width: 1400px !important;
+    margin: 0px auto !important;
 }
 
 #kc-content {
@@ -607,7 +609,11 @@ ul#kc-totp-supported-apps {
 }
 
 #kc-form-buttons {
-    margin-top: 20px;
+    padding: 1em 0;
+}
+
+.login-pf-page {
+  padding-top:0;
 }
 
 .login-pf-page .login-pf-brand {
@@ -619,6 +625,7 @@ ul#kc-totp-supported-apps {
 .login-pf-page .login-pf-settings {
     justify-content: left;
     padding: 0.7rem 0;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #edf1f2;
 }
 
