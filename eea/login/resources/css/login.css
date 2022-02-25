@@ -20,6 +20,12 @@
     height: 38px;
 }
 
+@media (max-width: 1200px) {
+  #kc-header .eu-flag{
+      display: none;
+  }
+}
+
 .pf-c-form__label-text{
     font-size: 1rem;
     font-weight: 500;
@@ -263,27 +269,16 @@ a#kc-current-locale-link::after {
     width: 100%;
 }
 
-div.kc-logo-text {
-    /* background-image: url(../img/keycloak-logo-text.png);
-    background-repeat: no-repeat;
-    height: 63px;
-    width: 300px;
-    margin: 0 auto; */
+#kc-header {
+    margin: 0 auto!important;
 }
 
-div.kc-logo-text span {
-    display: none;
-}
-
-.loginPage-container {
-    width: 1400px !important;
-    margin: 0px auto !important;
-}
-
-#kc-header #kc-header-wrapper {
+#kc-header-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0 2rem 0;
+    padding: 0 2rem;
+    margin: 10px 0;
+    width: 100%!important;
 }
 
 #kc-header {
@@ -337,7 +332,7 @@ div.kc-logo-text span {
 
 #kc-form-wrapper {
     font-size: 1rem;
-    padding: 1rem 1rem 0 1rem;
+    padding-top: 1rem;
 }
 
 #kc-info {
@@ -547,32 +542,6 @@ ul#kc-totp-supported-apps {
 
 @media (max-width: 767px) {
 
-    .login-pf body {
-        background: white;
-    }
-
-    #kc-header {
-        padding-left: 15px;
-        padding-right: 15px;
-        float: none;
-        text-align: left;
-    }
-
-    #kc-header-wrapper {
-        font-size: 16px;
-        font-weight: bold;
-        padding: 20px 60px 0 0;
-        color: #72767b;
-        letter-spacing: 0;
-    }
-
-    div.kc-logo-text {
-        margin: 0;
-        width: 150px;
-        height: 32px;
-        background-size: 100%;
-    }
-
     #kc-form {
         float: none;
     }
@@ -615,8 +584,71 @@ ul#kc-totp-supported-apps {
     margin-left: 10px;
 }
 
-#kc-form-buttons {
-    padding: 1em 0;
+#kc-container-buttons {
+    border-top: 0.07142857rem solid #edf1f2;
+}
+
+#kc-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+#kc-buttons .button {
+    margin-left: 1.25em;
+}
+
+.ui.button:hover .icon {
+  opacity: 0.8;
+}
+
+svg.circled {
+    height: 42px !important;
+    padding: 4px;
+    border: 2px solid;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+.right.button {
+    color: #826a6a;
+    margin: 0em 0.42857143em 0em -0.21428571em;
+}
+
+.right.button:hover,
+.right.button:focus,
+.right.button:active {
+    color: #826a6a;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+    border-radius: 50px;
+    margin-left: 0;
+}
+
+.pf-c-button.pf-m-primary {
+    color: #004b87;
+    background-color: transparent;
+    padding: 0;
+    margin: 0em 0.42857143em 0em -0.21428571em;
+}
+
+.pf-c-button.pf-m-primary:hover,
+.pf-c-button.pf-m-primary:focus,
+.pf-c-button.pf-m-primary:active {
+    color: #004b87;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+    border-radius: 50px;
+    margin-left: 0;
+}
+
+.pf-c-button.pf-m-block{
+  width:auto;
+}
+
+.form-group {
+  padding: 0 1em;
 }
 
 .login-pf-page {
@@ -630,10 +662,16 @@ ul#kc-totp-supported-apps {
 }
 
 .login-pf-page .login-pf-settings {
-    justify-content: left;
-    padding: 0.7rem 0;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #edf1f2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#kc-form-forgotPassword p {
+     padding: 0.7em 0;
+     margin-bottom: 0;
+     border-bottom: 1px solid #edf1f2;
 }
 
 #kc-form-forgotPassword a {
@@ -715,6 +753,7 @@ ul#kc-totp-supported-apps {
 
 .content-area {
   padding: 1.125rem 0 !important;
+  margin-bottom: 1em;
 }
 
 .card-pf {
@@ -733,15 +772,6 @@ ul#kc-totp-supported-apps {
 
 /*phone*/
 @media (max-width: 767px) {
-    .login-pf-page .card-pf {
-        max-width: none;
-        margin-left: 0;
-        margin-right: 0;
-        padding-top: 0;
-        border-top: 0;
-        box-shadow: 0 0;
-    }
-
     .kc-social-grid {
         grid-column-end: 12;
         --pf-l-grid__item--GridColumnEnd: span 12;
@@ -795,7 +825,7 @@ ul#kc-totp-supported-apps {
 #kc-footer {
     display: block;
     padding: 1.125rem 0;
-    margin: 1em 0;
+    margin-top: 1em;
 }
 
 .kc-footer-one {
@@ -846,12 +876,27 @@ ul#kc-totp-supported-apps {
     font-size: 12px;
 }
 
+@media (max-width: 860px) {
+    .kc-footer-one .two-tables tr {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .kc-footer-one .table-link-title, .kc-footer-one .table-link-description {
+        text-align: center !important;
+    }
+
+    .kc-footer-one .table-link-title {
+        order: 1;
+    }
+}
+
 .kc-footer-one .left-table .table-link-title {
-    text-align: right !important;
+    text-align: right;
 }
 
 .kc-footer-one .right-table .table-link-title {
-    text-align: left !important;
+    text-align: left;
 }
 
 .kc-footer-one .left-table .table-link-title a, .kc-footer-one .right-table .table-link-title a {
@@ -867,9 +912,26 @@ ul#kc-totp-supported-apps {
     padding-right: 1em;
 }
 
-.kc-footer-one .ui.table tr td {
+.kc-footer-one .left-table tr td, .kc-footer-one .right-table tr td {
     padding: 0.2em;
     border-top: none!important;
+}
+
+.kc-footer-one .media .media-body {
+    margin-left: 0.5em;
+    line-height: 1.8;
+    text-align: left;
+    width: auto;
+}
+
+i.icon {
+    display: inline-block;
+    opacity: 1;
+    margin: 0 0.25rem 0 0;
+    width: 1.18em;
+    height: 1em;
+    font-weight: 400;
+    speak: none;
 }
 
 .kc-footer-one .social-media {
@@ -877,14 +939,20 @@ ul#kc-totp-supported-apps {
     margin: 0 0.5em;
 }
 
-.kc-footer-one .media {
-   margin-top: 0;
+@media screen and (max-width: 665px) {
+    .kc-footer-one .social-media {
+        margin-bottom: 1em;
+    }
 }
 
-.kc-footer-one .media .media-body {
-    margin-left: 0.5em;
-    line-height: 1.8;
-    text-align: left;
+.kc-footer-one .media {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.kc-footer-one .media i {
+    font-size: 4em;
 }
 
 .kc-footer-one .mx-2 {
@@ -892,6 +960,16 @@ ul#kc-totp-supported-apps {
     align-items: center;
     margin: 0 2em;
     line-height: 1;
+}
+
+@media screen and (max-width: 630px) {
+    .kc-footer-one :not(:last-child).mx-2 {
+        margin-bottom: 1.5em;
+    }
+}
+
+.kc-footer-one .mx-2 i {
+    font-size: 3em;
 }
 
 .kc-footer-one .mx-2 span {
@@ -909,6 +987,15 @@ ul#kc-totp-supported-apps {
     flex-wrap: wrap;
     justify-content: center;
     padding: 1.125rem 0;
+}
+
+.portal-colophon .europe-agency-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .kc-footer-two .eu-section span {
@@ -935,4 +1022,11 @@ ul#kc-totp-supported-apps {
 .kc-footer-two .colophon-links {
     display: inline-block;
     margin: 0 1em 0.75em;
+}
+
+@media (max-width: 1023px) {
+    .portal-colophon .colophon-links {
+        width: 100%;
+        text-align: center;
+    }
 }
