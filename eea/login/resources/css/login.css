@@ -270,7 +270,8 @@ a#kc-current-locale-link::after {
 }
 
 #kc-header {
-    margin: 0 auto!important;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 #kc-header-wrapper {
@@ -855,15 +856,19 @@ svg.circled {
 
 .section-header, .section-header a {
     font-weight: bold;
-    margin: 0 0 0.8em !important;
+    margin: 0 0 0.83em 0;
     font-size: 1.375rem !important;
-    line-height: 1.2em !important;
+    line-height: 1.2;
 }
 
 .kc-footer-one .media-centered {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.colophon-section:first-child p {
+  margin: 0;
 }
 
 .kc-footer-one .two-tables {
@@ -918,8 +923,7 @@ svg.circled {
 }
 
 .kc-footer-one .media .media-body {
-    margin-left: 0.5em;
-    line-height: 1.8;
+    line-height: 2;
     text-align: left;
     width: auto;
 }
@@ -927,16 +931,16 @@ svg.circled {
 i.icon {
     display: inline-block;
     opacity: 1;
-    margin: 0 0.25rem 0 0;
-    width: 1.18em;
-    height: 1em;
     font-weight: 400;
     speak: none;
 }
 
+i.icon:before {
+     margin: 0 0.3em;
+}
+
 .kc-footer-one .social-media {
     display: flex;
-    margin: 0 0.5em;
 }
 
 @media screen and (max-width: 665px) {
@@ -969,12 +973,11 @@ i.icon {
 }
 
 .kc-footer-one .mx-2 i {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .kc-footer-one .mx-2 span {
-    margin: 0 0 0 0.5em;
-    line-height: 1.5;
+    line-height: 2;
     text-align: left;
 }
 
@@ -1021,7 +1024,7 @@ i.icon {
 
 .kc-footer-two .colophon-links {
     display: inline-block;
-    margin: 0 1em 0.75em;
+    margin: 0 1em 0.75em !important;
 }
 
 @media (max-width: 1023px) {

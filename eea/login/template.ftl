@@ -41,7 +41,7 @@
     <div id="kc-header" class="${properties.kcHeaderClass!} loginPage-container">
         <div id="kc-header-wrapper"
              class="${properties.kcHeaderWrapperClass!}">
-             <a title="Site" href="/"><img title="European Environment Agency" src="${url.resourcesPath}/img/eeaLogo.png" alt="European Environment Agency" height="64" class="ui image eea-logo"></a>
+             <a href="https://www.eea.europa.eu/" title="Site"><img title="European Environment Agency" src="${url.resourcesPath}/img/eeaLogo.png" alt="European Environment Agency" height="64" class="ui image eea-logo"></a>
              <a href="https://europa.eu/european-union/about-eu_en" title="The EEA is an agency of the European Union" target="_blank" rel="noreferrer"><img title="The EEA is an agency of the European Union" src="${url.resourcesPath}/img/europe-flag.svg" alt="The EEA is an agency of the European Union" height="64" class="ui image eu-flag"></a>
         </div>
     </div>
@@ -250,11 +250,10 @@
                <div class="portal-colophon">
                  <div class="colophon-section eea-software-info">
                      <p class="colophon-links"><i aria-hidden="true" class="fa fa-database icon"></i>${msg("sectionSix_titleOne")}&nbsp;<a href="${msg("sectionSix_urlOne")}">${msg("sectionSix_titleUrlOne")}</a></p>
-                     <p class="colophon-links">${msg("sectionSix_titleTwo")}&nbsp;<a href="${msg("sectionSix_urloneTwo_sustainability")}">${msg("sectionSix_titleUrlTwo_sustainability")}</a><span> / </span><a href="${msg("sectionSix_urlTwo_plone")}">${msg("sectionSix_titleUrlTwo_plone")}</a></p>
+                     <p class="colophon-links"><a href="${msg("sectionSix_urlTwo")}" title="${msg("sectionSix_titleUrlTwo")}">${msg("sectionSix_titleUrlTwo")}</a></p>
                      <p class="colophon-links"><a href="${msg("sectionSix_urlThree")}" title="${msg("sectionSix_titleUrlThree")}">${msg("sectionSix_titleUrlThree")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionSix_urlFour")}" title="${msg("sectionSix_titleUrlFour")}">${msg("sectionSix_titleUrlFour")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionSix_urlFive")}">${msg("sectionSix_titleUrlFive")}</a></p>
-                     <p class="colophon-links"><a rel="license" href="${msg("sectionSix_urlSix")}" title="${msg("sectionSix_titleUrlSix")}"><i aria-hidden="true" class="fa fa-creative-commons icon"></i><span>${msg("sectionSix_titleUrlSix")}</span></a></p>
+                     <p class="colophon-links"><a href="${msg("sectionSix_urlFour")}">${msg("sectionSix_titleUrlFour")}</a></p>
+                     <p class="colophon-links"><a rel="license" href="${msg("sectionSix_urlFive")}" title="${msg("sectionSix_titleUrlFive")}"><i aria-hidden="true" class="fa fa-creative-commons icon"></i><span>${msg("sectionSix_titleUrlFive")}</span></a></p>
                  </div>
              </div>
              </div>
