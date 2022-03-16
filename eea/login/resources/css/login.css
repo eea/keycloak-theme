@@ -34,7 +34,6 @@
 
 .pf-c-form-control{
     font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
-    font-size: 0.95em;
     font-weight: 400;
     color: rgba(0,0,0,0.87);
     border: 1px solid #c7d5d8;
@@ -337,7 +336,7 @@ a#kc-current-locale-link::after {
 }
 
 #kc-info {
-    margin: 20px -40px -30px;
+    margin: 0 -40px -30px;
 }
 
 #kc-info-wrapper {
@@ -346,13 +345,25 @@ a#kc-current-locale-link::after {
     background-color: #F0F0F0;
 }
 
+#kc-form-options {
+    padding: 0 1em;
+}
+
+.backtoLogin {
+    margin-bottom: 1em;
+}
+
 #kc-form-options span {
     display: block;
 }
 
 #kc-form-options .checkbox {
     margin-top: 0;
-    color: #72767b;
+    color: rgba(0,0,0,0.87);
+}
+
+#kc-form-options .checkbox input[type=checkbox] {
+    margin: 8px 0 0;
 }
 
 #kc-terms-text {
@@ -485,7 +496,11 @@ ul#kc-totp-supported-apps {
 }
 
 .kc-social-section hr{
-    margin-bottom: 10px
+    margin-bottom: 0;
+}
+
+hr {
+    margin-top: 0;
 }
 
 .kc-login-tooltip .kc-tooltip-text{
@@ -549,7 +564,6 @@ ul#kc-totp-supported-apps {
 
     #kc-info-wrapper {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
-        background-color: transparent;
     }
 
     .login-pf .container {
@@ -589,14 +603,14 @@ ul#kc-totp-supported-apps {
     border-top: 0.07142857rem solid #edf1f2;
 }
 
-#kc-buttons {
+#kc-form-buttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 1em;
 }
 
-#kc-buttons .button {
+#kc-form-buttons .button {
     margin-left: 1.25em;
 }
 
@@ -650,6 +664,16 @@ svg.circled {
 
 .form-group {
   padding: 0 1em;
+  margin-bottom: 15px;
+}
+
+.form-group .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+  padding: 0;
+}
+
+.form-horizontal .form-group {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .login-pf-page {
@@ -669,16 +693,20 @@ svg.circled {
     margin-bottom: 1em;
 }
 
-#kc-form-forgotPassword p {
+#kc-form-forgotPassword p, #kc-form-forgotPassword span {
      padding: 0.7em 0;
      margin-bottom: 0;
      border-bottom: 1px solid #edf1f2;
 }
 
-#kc-form-forgotPassword a {
+#kc-form-forgotPassword a, #kc-registration a {
   color: #004073;
   font-size: 0.95rem;
   font-weight: 300;
+}
+
+#kc-registration span {
+   color: rgba(0,0,0,0.87);
 }
 
 /* Internet Explorer 11 compatibility workaround for select-authenticator screen */

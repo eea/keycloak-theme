@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
-                    <div id="kc-form-options">
+                    <div>
                         <#if realm.rememberMe && !usernameHidden??>
                             <div class="checkbox">
                                 <label>
@@ -60,11 +60,10 @@
                                 <p><a tabindex="5" href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></p>
                             </#if>
                         </div>
-
                   </div>
 
                   <div id="kc-container-buttons">
-                    <div id="kc-buttons">
+                    <div id="kc-form-buttons">
                       <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
                       <a id="login-form-cancel" aria-label="Cancel" title="Cancel" class="right floated button" role="button" href="/">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="width:auto;fill:currentColor" class="icon circled"><path fill-rule="evenodd" d="M27.899 9.515L26.485 8.101 18 16.586 9.514 8.101 8.1 9.515 16.586 18 8.1 26.486 9.514 27.9 18 19.414 26.485 27.9 27.899 26.486 19.414 18z"></path></svg>
