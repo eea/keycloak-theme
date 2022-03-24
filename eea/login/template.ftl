@@ -131,7 +131,7 @@
 
             <#if auth?has_content && auth.showTryAnotherWayLink() && showAnotherWayIfPresent>
                 <form id="kc-select-try-another-way-form" action="${url.loginAction}" method="post">
-                    <div class="${properties.kcFormGroupClass!}">
+                    <div id="kc-form-tryAnotherWay" class="${properties.kcFormGroupClass!}">
                         <input type="hidden" name="tryAnotherWay" value="on"/>
                         <a href="#" id="try-another-way"
                            onclick="document.forms['kc-select-try-another-way-form'].submit();return false;">${msg("doTryAnotherWay")}</a>

@@ -294,11 +294,14 @@ a#kc-current-locale-link::after {
     font-family: inherit;
     font-weight: normal;
     padding-right: 10px;
+    padding: 1.2em 1em;
 }
 
 #kc-username {
     text-align: center;
-    margin-bottom:-10px;
+    margin-bottom: -10px;
+    padding: 1.2em 1em;
+    border-bottom: 0.07142857rem solid #edf1f2;
 }
 
 #kc-webauthn-settings-form {
@@ -603,11 +606,20 @@ hr {
     border-top: 0.07142857rem solid #edf1f2;
 }
 
+.kc-containerButtonMargin{
+    margin-top: 2em;
+}
+
 #kc-form-buttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 1em;
+}
+
+#kc-buttons-tryAnotherWay {
+    border-bottom: 0.07142857rem solid #edf1f2;
+    margin-bottom: 1em;
 }
 
 #kc-form-buttons .button {
@@ -699,7 +711,7 @@ svg.circled {
      border-bottom: 1px solid #edf1f2;
 }
 
-#kc-form-forgotPassword a, #kc-registration a {
+#kc-form-forgotPassword a, #kc-registration a, #kc-form-tryAnotherWay a {
   color: #004073;
   font-size: 0.95rem;
   font-weight: 300;
@@ -815,6 +827,12 @@ svg.circled {
     font-size: 15px;
     color: #72767b;
 }
+
+#kc-content-wrapper {
+   font-size: 1rem;
+   padding-top: 1rem;
+}
+
 #kc-content-wrapper .row {
     margin-left: 0;
     margin-right: 0;
