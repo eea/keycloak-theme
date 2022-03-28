@@ -152,7 +152,7 @@
     </div>
   </div>
     <div id="kc-footer" class="${properties.kcFooterClass!}">
-             <div class="kc-footer-one">
+             <!-- div class="kc-footer-one">
                <div class="kc-footer-portal-footer">
                  <div class="colophon-section">
                    <div class="section-centered">
@@ -240,7 +240,7 @@
                    </div>
                  </div>
                </div>
-             </div>
+             </div -->
              <div class="kc-footer-two">
                <div class="portal-colophon">
                  <div class="colophon-section eu-section">
