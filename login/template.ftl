@@ -156,87 +156,18 @@
                <div class="kc-footer-portal-footer">
                  <div class="colophon-section">
                    <div class="section-centered">
-                     <h2 class="section-header"><a href="${msg("sectionOne_url")}">${msg("sectionOne_title")}</a></h2>
-                     <p class="media-centered">${msg("sectionOne_description")}</p>
-                   </div>
-                 </div>
-                 <div class="colophon-section">
-                   <div class="section-centered">
-                     <h2 class="section-header">${msg("sectionTwo_title")}</h2>
-                     <div class="two-tables">
-                       <table class="left-table"><tbody>
-                           <tr>
-                             <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlOne")}">${msg("sectionTwo_tableTitleOne")}</a></td>
-                             <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlOne")}">${msg("sectionTwo_tableDescriptionOne")}</a></td>
-                           </tr>
-                           <tr>
-                             <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlTwo")}">${msg("sectionTwo_tableTitleTwo")}</a></td>
-                             <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlTwo")}">${msg("sectionTwo_tableDescriptionTwo")}</a></td>
-                           </tr>
-                           <tr>
-                             <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlThree")}">${msg("sectionTwo_tableTitleThree")}</a></td>
-                             <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlThree")}">${msg("sectionTwo_tableDescriptionThree")}</a></td>
-                           </tr>
-                           <tr>
-                             <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlFour")}">${msg("sectionTwo_tableTitleFour")}</a></td>
-                             <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlFour")}">${msg("sectionTwo_tableDescriptionFour")}</a></td>
-                           </tr>
-                           <tr class="">
-                             <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlFive")}">${msg("sectionTwo_tableTitleFive")}</a></td>
-                             <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlFive")}">${msg("sectionTwo_tableDescriptionFive")}</a></td>
-                           </tr>
-                         </tbody></table>
-
-                         <table class="right-table"><tbody>
-                             <tr>
-                               <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlSix")}">${msg("sectionTwo_tableDescriptionSix")}</a></td>
-                               <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlSix")}">${msg("sectionTwo_tableTitleSix")}</a></td>
-                             </tr>
-                             <tr>
-                               <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlSeven")}">${msg("sectionTwo_tableDescriptionSeven")}</a></td>
-                               <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlSeven")}">${msg("sectionTwo_tableTitleSeven")}</a></td>
-                             </tr>
-                             <tr>
-                               <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlEight")}">${msg("sectionTwo_tableDescriptionEight")}</a></td>
-                               <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlEight")}">${msg("sectionTwo_tableTitleEight")}</a></td>
-                             </tr>
-                             <tr>
-                               <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlNine")}">${msg("sectionTwo_tableDescriptionNine")}</a></td>
-                               <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlNine")}">${msg("sectionTwo_tableTitleNine")}</a></td>
-                             </tr>
-                             <tr>
-                               <td class="table-link-description"><a href="${msg("sectionTwo_tableUrlTen")}">${msg("sectionTwo_tableDescriptionTen")}</a></td>
-                               <td class="table-link-title"><a href="${msg("sectionTwo_tableUrlTen")}">${msg("sectionTwo_tableTitleTen")}</a></td>
-                             </tr>
-                           </tbody></table>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="colophon-section">
-                   <div class="section-centered">
-                     <h2 class="section-header">${msg("sectionThree_title")}</h2>
-                     <div class="media-centered">
-                       <div class="social-media">
-                         <a class="link-plain media" title="Follow us on Twitter" href="https://twitter.com/euenvironment"><i aria-hidden="true" class="fa fa-twitter-square icon"></i></a>
-                         <a class="link-plain media" title="Follow us on Facebook" href="https://www.facebook.com/European.Environment.Agency"><i aria-hidden="true" class="fa fa-facebook-square icon"></i></a>
-                         <a class="link-plain media" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/european-environment-agency"><i aria-hidden="true" class="fa fa-linkedin-square icon"></i></a>
-                         <a class="link-plain media" title="Follow us on YouTube" href="https://www.youtube.com/user/EEAvideos"><i aria-hidden="true" class="fa fa-youtube-square icon"></i></a>
-                         <a class="link-plain media" title="Subscribe to RSS Feed" href="/subscription/news-feeds"><i aria-hidden="true" class="fa fa-rss-square icon"></i></a>
-                       </div>
-                       <a class="media" title="Subscribe by email" href="/subscription/targeted-subscription"><i aria-hidden="true" class="fa fa-newspaper-o icon"></i>
-                         <div class="media-body"><span>${msg("sectionThree_descriptionOne")}</span></br><span>${msg("sectionThree_descriptionTwo")}</span></div>
-                       </a>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="colophon-section">
-                   <div class="section-centered">
-                     <h2 class="section-header">${msg("sectionFour_title")}</h2>
-                     <div class="media-centered">
-                       <div class="mx-2"><i aria-hidden="true" class="fa fa-map-marker icon"></i><span>${msg("sectionFour_locationLineOne")}</br>${msg("sectionFour_locationLineTwo")}</span></div>
-                       <div class="mx-2"><i aria-hidden="true" class="fa fa-phone icon"></i><span>${msg("sectionFour_phoneLineOne")}</br><a href="${msg("sectionFour_phoneUrlLineTwo")}">${msg("sectionFour_phoneLineTwo")}</a></span></div>
-                       <div class="mx-2"><i aria-hidden="true" class="fa fa-comment icon"></i><span><a href="${msg("sectionFour_messageUrlLineOne")}">${msg("sectionFour_messageLineOne")}</a></br><a href="${msg("sectionFour_messageUrlLineTwo")}">${msg("sectionFour_messageLineTwo")}</a></span></div>
-                     </div>
+                     <h2 class="section-header">${msg("sectionOne_title")}</h2>
+                     <ul class="media-centered">
+                       <li><b>${msg("sectionOne_itemOne_1")}</b> ${msg("sectionOne_itemOne_2")}
+                         <a href="${msg("sectionOne_itemURL")}" title="${msg("sectionOne_itemOne3")}">${msg("sectionOne_itemOne3")}</a>
+                         ${msg("sectionOne_itemOne_4")}</li>
+                       <li><b>${msg("sectionOne_itemTwo_1")}</b> ${msg("sectionOne_itemTwo_2")}
+                          <a href="${msg("sectionOne_itemTwoURL")}" title="${msg("sectionOne_itemTwo_3")}">${msg("sectionOne_itemTwo_3")}</a></li>
+                        <li><b>${msg("sectionOne_itemThree_1")}</b> ${msg("sectionOne_itemThree_2")}
+                          <a href="${msg("sectionOne_itemThreeURL_1")}" title="${msg("sectionOne_itemThree_3")}">${msg("sectionOne_itemThree_3")}</a>
+                          ${msg("sectionOne_itemThree_3")}
+                          <a href="${msg("sectionOne_itemThreeURL_2")}" title="${msg("sectionOne_itemThree_4")}">${msg("sectionOne_itemThree_4")}</a></li>
+                     </ul>
                    </div>
                  </div>
                </div>
@@ -244,16 +175,16 @@
              <div class="kc-footer-two">
                <div class="portal-colophon">
                  <div class="colophon-section eu-section">
-                   <a href="${msg("sectionFive_url")}"><span class="europe-agency-text"><img title="European Union Flag" src="${url.resourcesPath}/img/europe-flag.svg" alt="European Union Flag" height="64" class="ui image eu-flag"><span>${msg("sectionFive_title")}</span></span></a>
+                   <a href="${msg("sectionTwo_URLEEA")}"><span class="europe-agency-text"><img title="European Union Flag" src="${url.resourcesPath}/img/europe-flag.svg" alt="European Union Flag" height="64" class="ui image eu-flag"><span>${msg("sectionTwo_titleEEA")}</span></span></a>
                  </div>
                </div>
                <div class="portal-colophon">
                  <div class="colophon-section eea-software-info">
-                     <p class="colophon-links"><i aria-hidden="true" class="fa fa-database icon"></i>${msg("sectionSix_titleOne")}&nbsp;<a href="${msg("sectionSix_urlOne")}">${msg("sectionSix_titleUrlOne")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionSix_urlTwo")}" title="${msg("sectionSix_titleUrlTwo")}">${msg("sectionSix_titleUrlTwo")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionSix_urlThree")}" title="${msg("sectionSix_titleUrlThree")}">${msg("sectionSix_titleUrlThree")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionSix_urlFour")}">${msg("sectionSix_titleUrlFour")}</a></p>
-                     <p class="colophon-links"><a rel="license" href="${msg("sectionSix_urlFive")}" title="${msg("sectionSix_titleUrlFive")}"><i aria-hidden="true" class="fa fa-creative-commons icon"></i><span>${msg("sectionSix_titleUrlFive")}</span></a></p>
+                     <p class="colophon-links"><i aria-hidden="true" class="fa fa-database icon"></i>${msg("sectionTwo_titleOne")}&nbsp;<a href="${msg("sectionTwo_urlOne")}">${msg("sectionTwo_titleUrlOne")}</a></p>
+                     <p class="colophon-links"><a href="${msg("sectionTwo_urlTwo")}" title="${msg("sectionTwo_titleUrlTwo")}">${msg("sectionTwo_titleUrlTwo")}</a></p>
+                     <p class="colophon-links"><a href="${msg("sectionTwo_urlThree")}" title="${msg("sectionTwo_titleUrlThree")}">${msg("sectionTwo_titleUrlThree")}</a></p>
+                     <p class="colophon-links"><a href="${msg("sectionTwo_urlFour")}">${msg("sectionTwo_titleUrlFour")}</a></p>
+                     <p class="colophon-links"><a rel="license" href="${msg("sectionTwo_urlFive")}" title="${msg("sectionTwo_titleUrlFive")}"><i aria-hidden="true" class="fa fa-creative-commons icon"></i><span>${msg("sectionTwo_titleUrlFive")}</span></a></p>
                  </div>
              </div>
              </div>

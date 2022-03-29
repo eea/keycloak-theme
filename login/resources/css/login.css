@@ -875,18 +875,18 @@ svg.circled {
     margin-top: 1em;
 }
 
-.kc-footer-one {
-    background: #004b87;
-    color: #FFF;
-}
 
 .kc-footer-one a {
-    color: #FFF;
+    color: #0051cc;
 }
 
 .kc-footer-one a:hover {
-    color: #FFF;
-    text-decoration: none;
+    color: #0065ff;
+    text-decoration: underline;
+}
+
+.kc-footer-portal-footer .colophon-section {
+    border-bottom: 1px solid rgba(0,0,0,.11);
 }
 
 .kc-footer-portal-footer .colophon-section:not(:first-child) {
@@ -894,16 +894,16 @@ svg.circled {
 }
 
 .section-centered {
-    width: 100%;
-    flex-basis: 100%;
     padding: 1.125rem 0;
-    text-align: center;
+    max-width: 376px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section-header, .section-header a {
-    font-weight: bold;
+.section-header {
+    font-weight: 600;
     margin: 0 0 0.83em 0;
-    font-size: 1.375rem !important;
+    font-size: 1.25rem !important;
     line-height: 1.2;
 }
 
@@ -911,6 +911,14 @@ svg.circled {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 14px;
+}
+
+.kc-footer-one ul.media-centered {
+    list-style: disc;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 1.5em;
 }
 
 .colophon-section:first-child p {
