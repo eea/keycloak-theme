@@ -1,15 +1,14 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=!messagesPerField.existsError('username') displayInfo=(realm.password && realm.registrationAllowed && !registrationDisabled??); section>
     <#if section = "header">
-        ${msg("loginAccountTitle")}
+      ${msg("loginAccountTitle")}
     <#elseif section = "form">
-        <div id="kc-form">
-            <div id="kc-form-wrapper">
-                <#if realm.password>
-                    <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}"
-                          method="post">
-                        <#if !usernameHidden??>
-                            <div class="${properties.kcFormGroupClass!}">
+    <div id="kc-form">
+      <div id="kc-form-wrapper">
+        <#if realm.password>
+          <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
+                <#if !usernameHidden??>
+                    <div class="${properties.kcFormGroupClass!}">
                             <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}
                             <#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
 
@@ -46,43 +45,61 @@
                                 </div>
                           </div>
 
-                        <div id="kc-container-buttons">
-                          <div id="kc-form-buttons">
-                            <button id="login-form-cancel" aria-label="Cancel" title="Cancel" class="right floated button" role="button" href="/">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="width:auto;fill:currentColor" class="icon circled"><path fill-rule="evenodd" d="M27.899 9.515L26.485 8.101 18 16.586 9.514 8.101 8.1 9.515 16.586 18 8.1 26.486 9.514 27.9 18 19.414 26.485 27.9 27.899 26.486 19.414 18z"></path></svg>
-                            </button>
-                            <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!} button" name="login" id="kc-login" type="submit" aria-label="Log in" title="Log in">
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="width:auto;fill:currentColor" class="icon circled"><path fill-rule="evenodd" d="M18.707 5.293L17.293 6.707 27.586 17 5 17 5 19 27.586 19 17.293 29.293 18.707 30.707 31.414 18z"></path></svg>
-                            </button>
+                          <div id="kc-container-buttons">
+                            <div id="kc-form-buttons">
+                              <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
+                                <a id="login-form-cancel" aria-label="Cancel" title="Cancel" class="right floated button" role="button" href="/">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="width:auto;fill:currentColor" class="icon circled"><path fill-rule="evenodd" d="M27.899 9.515L26.485 8.101 18 16.586 9.514 8.101 8.1 9.515 16.586 18 8.1 26.486 9.514 27.9 18 19.414 26.485 27.9 27.899 26.486 19.414 18z"></path></svg>
+                                </a>
+                              <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!} button" name="login" id="kc-login" type="submit" aria-label="Log in" title="Log in">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="width:auto;fill:currentColor" class="icon circled"><path fill-rule="evenodd" d="M18.707 5.293L17.293 6.707 27.586 17 5 17 5 19 27.586 19 17.293 29.293 18.707 30.707 31.414 18z"></path></svg>
+                              </button>
+                            </div>
                           </div>
-                        </div>
-                    </form>
-                </#if>
-            </div>
-        </div>
-
-        <#if realm.password && social.providers??>
-            <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
-                <hr/>
-                <h4>${msg("identity-provider-login-label")}</h4>
-
-                <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountListGridClass!}</#if>">
-                    <#list social.providers as p>
-                        <a id="social-${p.alias}" class="${properties.kcFormSocialAccountListButtonClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountGridItem!}</#if>"
-                                type="button" href="${p.loginUrl}">
-                            <#if p.iconClasses?has_content>
-                                <i class="${properties.kcCommonLogoIdP!} ${p.iconClasses!}" aria-hidden="true"></i>
-                                <span class="${properties.kcFormSocialAccountNameClass!} kc-social-icon-text">${p.displayName!}</span>
-                            <#else>
-                                <span class="${properties.kcFormSocialAccountNameClass!}">${p.displayName!}</span>
-                            </#if>
-                        </a>
-                    </#list>
-                </ul>
-            </div>
+          </form>
         </#if>
+      </div>
 
-        <#elseif section = "info" >
+    </div>
+    <#if realm.password && social.providers??>
+      <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
+          <hr/>
+          <h4>${msg("identity-provider-login-label")}</h4>
+
+          <ul class="${properties.kcFormSocialAccountListClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountListGridClass!}</#if>">
+              <#list social.providers as p>
+                  <a id="social-${p.alias}" class="${properties.kcFormSocialAccountListButtonClass!} <#if social.providers?size gt 3>${properties.kcFormSocialAccountGridItem!}</#if>"
+                      type="button" href="${p.loginUrl}">
+                    <#if p.iconClasses?has_content>
+                        <i class="${properties.kcCommonLogoIdP!} ${p.iconClasses!}" aria-hidden="true"></i>
+                        <span class="${properties.kcFormSocialAccountNameClass!} kc-social-icon-text">${p.displayName!}</span>
+                    <#else>
+                        <span class="${properties.kcFormSocialAccountNameClass!}">${p.displayName!}</span>
+                    </#if>
+                  </a>
+              </#list>
+          </ul>
+      </div>
+
+      <div class="kc-eionetAccount">
+            <div class="kc-eionetAccount-portal">
+                <div class="section-centered">
+                  <ul class="media-centered">
+                    <li><b>${msg("sectionOne_itemOne_1")}</b> ${msg("sectionOne_itemOne_2")}
+                      <a href="${msg("sectionOne_itemURL")}" title="${msg("sectionOne_itemOne3")}">${msg("sectionOne_itemOne3")}</a>
+                      ${msg("sectionOne_itemOne_4")}</li>
+                    <li><b>${msg("sectionOne_itemTwo_1")}</b> ${msg("sectionOne_itemTwo_2")}
+                       <a href="${msg("sectionOne_itemTwoURL")}" title="${msg("sectionOne_itemTwo_3")}">${msg("sectionOne_itemTwo_3")}</a></li>
+                     <li><b>${msg("sectionOne_itemThree_1")}</b> ${msg("sectionOne_itemThree_2")}
+                       <a href="${msg("sectionOne_itemThreeURL_1")}" title="${msg("sectionOne_itemThree_3")}">${msg("sectionOne_itemThree_3")}</a>
+                       ${msg("sectionOne_itemThree_3")}
+                       <a href="${msg("sectionOne_itemThreeURL_2")}" title="${msg("sectionOne_itemThree_4")}">${msg("sectionOne_itemThree_4")}</a></li>
+                  </ul>
+                </div>
+            </div>
+      </div>
+    </#if>
+    <#elseif section = "info" >
             <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
                 <div id="kc-registration-container">
                     <div id="kc-registration">
@@ -91,6 +108,6 @@
                     </div>
                 </div>
             </#if>
-        </#if>
+    </#if>
 
 </@layout.registrationLayout>

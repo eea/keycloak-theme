@@ -45,6 +45,7 @@
              <a href="https://europa.eu/european-union/about-eu_en" title="The EEA is an agency of the European Union" target="_blank" rel="noreferrer"><img title="The EEA is an agency of the European Union" src="${url.resourcesPath}/img/europe-flag.svg" alt="The EEA is an agency of the European Union" height="64" class="ui image eu-flag"></a>
         </div>
     </div>
+    <h2 id="kc-title">${msg("loginTitle")}</h2>
     <div class="${properties.kcMainContentClass!}">
       <div class="${properties.kcFormCardClass!}">
         <header class="${properties.kcFormHeaderClass!}">
@@ -153,26 +154,6 @@
   </div>
     <div id="kc-footer" class="${properties.kcFooterClass!}">
              <div class="kc-footer-one">
-               <div class="kc-footer-portal-footer">
-                 <div class="colophon-section">
-                   <div class="section-centered">
-                     <h2 class="section-header">${msg("sectionOne_title")}</h2>
-                     <ul class="media-centered">
-                       <li><b>${msg("sectionOne_itemOne_1")}</b> ${msg("sectionOne_itemOne_2")}
-                         <a href="${msg("sectionOne_itemURL")}" title="${msg("sectionOne_itemOne3")}">${msg("sectionOne_itemOne3")}</a>
-                         ${msg("sectionOne_itemOne_4")}</li>
-                       <li><b>${msg("sectionOne_itemTwo_1")}</b> ${msg("sectionOne_itemTwo_2")}
-                          <a href="${msg("sectionOne_itemTwoURL")}" title="${msg("sectionOne_itemTwo_3")}">${msg("sectionOne_itemTwo_3")}</a></li>
-                        <li><b>${msg("sectionOne_itemThree_1")}</b> ${msg("sectionOne_itemThree_2")}
-                          <a href="${msg("sectionOne_itemThreeURL_1")}" title="${msg("sectionOne_itemThree_3")}">${msg("sectionOne_itemThree_3")}</a>
-                          ${msg("sectionOne_itemThree_3")}
-                          <a href="${msg("sectionOne_itemThreeURL_2")}" title="${msg("sectionOne_itemThree_4")}">${msg("sectionOne_itemThree_4")}</a></li>
-                     </ul>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="kc-footer-two">
                <div class="portal-colophon">
                  <div class="colophon-section eu-section">
                    <a href="${msg("sectionTwo_URLEEA")}"><span class="europe-agency-text"><img title="European Union Flag" src="${url.resourcesPath}/img/europe-flag.svg" alt="European Union Flag" height="64" class="ui image eu-flag"><span>${msg("sectionTwo_titleEEA")}</span></span></a>

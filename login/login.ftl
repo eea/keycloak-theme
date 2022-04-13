@@ -1,13 +1,13 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=!messagesPerField.existsError('username','password') displayInfo=realm.password && realm.registrationAllowed && !registrationDisabled??; section>
     <#if section = "header">
-    ${msg("loginAccountTitle")}
+      ${msg("loginAccountTitle")}
     <#elseif section = "form">
-    <h2 id="kc-page-title-two">${msg("loginAccountSubTitle")}</h2>
+      <h2 id="kc-page-title-two">${msg("loginAccountSubTitle")}</h2>
     <div id="kc-form">
       <div id="kc-form-wrapper">
         <#if realm.password>
-            <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
+          <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                 <#if !usernameHidden??>
                     <div class="${properties.kcFormGroupClass!}">
                         <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}
@@ -74,11 +74,12 @@
                     </div>
 
                   </div>
-            </form>
+          </form>
         </#if>
-        </div>
+      </div>
 
-        <#if realm.password && social.providers??>
+    </div>
+    <#if realm.password && social.providers??>
             <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
                 <hr/>
                 <h4>${msg("identity-provider-login-label")}</h4>
@@ -97,18 +98,34 @@
                     </#list>
                 </ul>
             </div>
-        </#if>
-
-    </div>
+            
+            <div class="kc-eionetAccount">
+                  <div class="kc-eionetAccount-portal">
+                      <div class="section-centered">
+                        <ul class="media-centered">
+                          <li><b>${msg("sectionOne_itemOne_1")}</b> ${msg("sectionOne_itemOne_2")}
+                            <a href="${msg("sectionOne_itemURL")}" title="${msg("sectionOne_itemOne3")}">${msg("sectionOne_itemOne3")}</a>
+                            ${msg("sectionOne_itemOne_4")}</li>
+                          <li><b>${msg("sectionOne_itemTwo_1")}</b> ${msg("sectionOne_itemTwo_2")}
+                             <a href="${msg("sectionOne_itemTwoURL")}" title="${msg("sectionOne_itemTwo_3")}">${msg("sectionOne_itemTwo_3")}</a></li>
+                           <li><b>${msg("sectionOne_itemThree_1")}</b> ${msg("sectionOne_itemThree_2")}
+                             <a href="${msg("sectionOne_itemThreeURL_1")}" title="${msg("sectionOne_itemThree_3")}">${msg("sectionOne_itemThree_3")}</a>
+                             ${msg("sectionOne_itemThree_3")}
+                             <a href="${msg("sectionOne_itemThreeURL_2")}" title="${msg("sectionOne_itemThree_4")}">${msg("sectionOne_itemThree_4")}</a></li>
+                        </ul>
+                      </div>
+                  </div>
+            </div>
+    </#if>
     <#elseif section = "info" >
-        <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
+      <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
             <div id="kc-registration-container">
                 <div id="kc-registration">
                     <span>${msg("noAccount")} <a tabindex="6"
                                                  href="${url.registrationUrl}">${msg("doRegister")}</a></span>
                 </div>
             </div>
-        </#if>
+      </#if>
     </#if>
 
 </@layout.registrationLayout>
