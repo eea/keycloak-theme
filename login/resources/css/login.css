@@ -714,9 +714,8 @@ svg.circled {
 }
 
 #kc-form-forgotPassword p, #kc-form-forgotPassword span {
-     padding: 0.7em 0;
+     padding: 0;
      margin-bottom: 0;
-     border-bottom: 1px solid #edf1f2;
 }
 
 #kc-form-forgotPassword a, #kc-registration a, #kc-form-tryAnotherWay a {
@@ -813,6 +812,17 @@ svg.circled {
     max-width: 376px;
 }
 
+#kc-social-providers {
+    margin: 0 auto;
+    border: 1px solid #c7d5d8;
+    padding: 1.2rem 0;
+    max-width: 376px;
+}
+
+div#kc-social-providers {
+  margin-top: 1.2rem;
+}
+
 @media (min-width: 768px) {
     .login-pf-page .login-pf-header {
         margin-bottom: 0;
@@ -884,28 +894,28 @@ svg.circled {
 }
 
 #kc-social-providers h4 {
-    padding-top: 1em;
+    font-size: 1rem;
+    font-weight: 500;
     margin-top: 0;
-}
-
-#kc-social-providers .kc-social-links {
-    margin-bottom: 1em;
+    border-bottom: 0.07142857rem solid #edf1f2;
+    padding-bottom: 1em;
 }
 
 #kc-social-providers .kc-social-item {
   margin-bottom: 0;
 }
 
-.kc-eionetAccount a {
+.kc-footer-one a {
     color: #0051cc;
+    font-weight: 300;
 }
 
-.kc-eionetAccount a:hover {
+.kc-footer-one a:hover {
     color: #0065ff;
     text-decoration: underline;
 }
 
-.kc-eionetAccount-portal {
+.kc-footer-portal-footer {
     padding: 0 1em;
     border-top: 0.07142857rem solid #edf1f2;
 }
@@ -924,14 +934,14 @@ svg.circled {
     line-height: 1.2;
 }
 
-.kc-eionetAccount .media-centered {
+.kc-footer-one .media-centered {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 14px;
 }
 
-.kc-eionetAccount ul.media-centered {
+.kc-footer-one ul.media-centered {
     list-style: disc;
     margin-top: 0;
     margin-bottom: 10px;
@@ -953,11 +963,11 @@ i.icon:before {
      margin: 0 0.3em;
 }
 
-.kc-footer-one a:hover{
+.kc-footer-two a:hover{
     text-decoration: none;
 }
 
-.kc-footer-one .colophon-section {
+.kc-footer-two .colophon-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -973,32 +983,32 @@ i.icon:before {
     font-weight: 400;
 }
 
-.kc-footer-one .eu-section {
+.kc-footer-two .eu-section {
     border-top: 1px solid rgba(0,0,0,.11);
 }
 
-.kc-footer-one .eu-section span {
+.kc-footer-two .eu-section span {
     color: #999;
     font-size: 12px;
     font-weight: 400;
     margin: 0 1em;
 }
 
-.kc-footer-one .eea-software-info {
+.kc-footer-two .eea-software-info {
     border-top: 1px solid rgba(0,0,0,.11);
     font-size: 11px;
 }
 
-.kc-footer-one .eea-software-info a {
+.kc-footer-two .eea-software-info a {
     color: #274357;
     font-weight: 700;
 }
 
-.kc-footer-one .eea-software-info a:hover {
+.kc-footer-two .eea-software-info a:hover {
     color: #274357;
 }
 
-.kc-footer-one .colophon-links {
+.kc-footer-two .colophon-links {
     display: inline-block;
     margin: 0 1em 0.75em !important;
 }

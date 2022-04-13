@@ -151,25 +151,41 @@
       </div>
 
     </div>
+    <#nested "socialProviders">
   </div>
-    <div id="kc-footer" class="${properties.kcFooterClass!}">
-             <div class="kc-footer-one">
-               <div class="portal-colophon">
-                 <div class="colophon-section eu-section">
-                   <a href="${msg("sectionTwo_URLEEA")}"><span class="europe-agency-text"><img title="European Union Flag" src="${url.resourcesPath}/img/europe-flag.svg" alt="European Union Flag" height="64" class="ui image eu-flag"><span>${msg("sectionTwo_titleEEA")}</span></span></a>
+  <div id="kc-footer" class="${properties.kcFooterClass!}">
+           <div class="kc-footer-one">
+             <div class="kc-footer-portal-footer">
+                 <div class="section-centered">
+                   <ul class="media-centered">
+                     <li><b>${msg("sectionOne_itemOne_1")}</b> ${msg("sectionOne_itemOne_2")}
+                       <a href="${msg("sectionOne_itemURL")}" title="${msg("sectionOne_itemOne3")}">${msg("sectionOne_itemOne3")}</a>
+                       ${msg("sectionOne_itemOne_4")}</li>
+                      <li><b>${msg("sectionOne_itemTwo_1")}</b> ${msg("sectionOne_itemTwo_2")}
+                        <a href="${msg("sectionOne_itemTwoURL_1")}" title="${msg("sectionOne_itemTwo_3")}">${msg("sectionOne_itemTwo_3")}</a>
+                        ${msg("sectionOne_itemTwo_3")}
+                        <a href="${msg("sectionOne_itemTwoURL_2")}" title="${msg("sectionOne_itemTwo_4")}">${msg("sectionOne_itemTwo_4")}</a></li>
+                   </ul>
                  </div>
+             </div>
+           </div>
+           <div class="kc-footer-two">
+             <div class="portal-colophon">
+               <div class="colophon-section eu-section">
+                 <a href="${msg("sectionTwo_URLEEA")}"><span class="europe-agency-text"><img title="European Union Flag" src="${url.resourcesPath}/img/europe-flag.svg" alt="European Union Flag" height="64" class="ui image eu-flag"><span>${msg("sectionTwo_titleEEA")}</span></span></a>
                </div>
-               <div class="portal-colophon">
-                 <div class="colophon-section eea-software-info">
-                     <p class="colophon-links"><i aria-hidden="true" class="fa fa-database icon"></i>${msg("sectionTwo_titleOne")}&nbsp;<a href="${msg("sectionTwo_urlOne")}">${msg("sectionTwo_titleUrlOne")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionTwo_urlTwo")}" title="${msg("sectionTwo_titleUrlTwo")}">${msg("sectionTwo_titleUrlTwo")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionTwo_urlThree")}" title="${msg("sectionTwo_titleUrlThree")}">${msg("sectionTwo_titleUrlThree")}</a></p>
-                     <p class="colophon-links"><a href="${msg("sectionTwo_urlFour")}">${msg("sectionTwo_titleUrlFour")}</a></p>
-                     <p class="colophon-links"><a rel="license" href="${msg("sectionTwo_urlFive")}" title="${msg("sectionTwo_titleUrlFive")}"><i aria-hidden="true" class="fa fa-creative-commons icon"></i><span>${msg("sectionTwo_titleUrlFive")}</span></a></p>
-                 </div>
              </div>
-             </div>
-    </div>
+             <div class="portal-colophon">
+               <div class="colophon-section eea-software-info">
+                   <p class="colophon-links"><i aria-hidden="true" class="fa fa-database icon"></i>${msg("sectionTwo_titleOne")}&nbsp;<a href="${msg("sectionTwo_urlOne")}">${msg("sectionTwo_titleUrlOne")}</a></p>
+                   <p class="colophon-links"><a href="${msg("sectionTwo_urlTwo")}" title="${msg("sectionTwo_titleUrlTwo")}">${msg("sectionTwo_titleUrlTwo")}</a></p>
+                   <p class="colophon-links"><a href="${msg("sectionTwo_urlThree")}" title="${msg("sectionTwo_titleUrlThree")}">${msg("sectionTwo_titleUrlThree")}</a></p>
+                   <p class="colophon-links"><a href="${msg("sectionTwo_urlFour")}">${msg("sectionTwo_titleUrlFour")}</a></p>
+                   <p class="colophon-links"><a rel="license" href="${msg("sectionTwo_urlFive")}" title="${msg("sectionTwo_titleUrlFive")}"><i aria-hidden="true" class="fa fa-creative-commons icon"></i><span>${msg("sectionTwo_titleUrlFive")}</span></a></p>
+               </div>
+           </div>
+           </div>
+  </div>
 
 </div>
 </body>
