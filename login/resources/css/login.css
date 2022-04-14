@@ -209,7 +209,7 @@ textarea.pf-c-form-control {
 /*End of IE compatibility*/
 h1#kc-page-title {
     border-bottom: 0.3rem solid #C7D5D8;
-    padding: 1.2em 1em;
+    padding: 1em 1em;
     margin: 0;
     text-align: left;
     font-size: 1.15rem;
@@ -229,7 +229,6 @@ h2#kc-page-title-two {
      justify-content: center;
      line-height: 1.2;
      font-weight: 600;
-     margin-bottom: 1em;
 }
 
 #kc-locale ul {
@@ -343,7 +342,6 @@ a#kc-current-locale-link::after {
 
 #kc-form-wrapper {
     font-size: 1rem;
-    padding-top: 1rem;
 }
 
 #kc-info {
@@ -815,12 +813,18 @@ svg.circled {
 #kc-social-providers {
     margin: 0 auto;
     border: 1px solid #c7d5d8;
-    padding: 1.2rem 0;
+    box-shadow: 0px 2px 4px 0px rgb(34 36 38 / 12%), 0px 2px 10px 0px rgb(34 36 38 / 15%);
+    padding-bottom: 1.2rem;
     max-width: 376px;
 }
 
 div#kc-social-providers {
-  margin-top: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.alternative-login-socialProviders {
+    margin-top: 2.2rem;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -848,7 +852,6 @@ div#kc-social-providers {
 
 #kc-content-wrapper {
    font-size: 1rem;
-   padding-top: 1rem;
 }
 
 #kc-content-wrapper .row {
@@ -893,16 +896,18 @@ div#kc-social-providers {
     margin-top: 1em;
 }
 
-#kc-social-providers h4 {
-    font-size: 1rem;
+#kc-social-providers h1 {
+    border-bottom: 0.3rem solid #C7D5D8;
+    padding: 1em 1em;
+    margin: 0;
+    text-align: left;
+    font-size: 1.15rem;
     font-weight: 500;
-    margin-top: 0;
-    border-bottom: 0.07142857rem solid #edf1f2;
-    padding-bottom: 1em;
+    color: #363636;
 }
 
 #kc-social-providers .kc-social-item {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .kc-footer-one a {

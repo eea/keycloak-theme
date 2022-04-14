@@ -151,6 +151,7 @@
       </div>
 
     </div>
+    <h4 class="alternative-login-socialProviders">${msg("identity-provider-login-label")}</h4>
     <#nested "socialProviders">
   </div>
   <div id="kc-footer" class="${properties.kcFooterClass!}">
