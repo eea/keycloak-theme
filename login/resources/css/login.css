@@ -209,7 +209,7 @@ textarea.pf-c-form-control {
 /*End of IE compatibility*/
 h1#kc-page-title {
     border-bottom: 0.3rem solid #C7D5D8;
-    padding: 1em 1em;
+    padding: 1em;
     margin: 0;
     text-align: left;
     font-size: 1.15rem;
@@ -298,7 +298,8 @@ a#kc-current-locale-link::after {
 }
 
 #kc-attempted-username {
-    font-size: 20px;
+    font-size: 1.15rem;
+    font-weight: 500;
     font-family: inherit;
     font-weight: normal;
     padding-right: 10px;
@@ -306,9 +307,12 @@ a#kc-current-locale-link::after {
 
 #kc-username {
     text-align: center;
-    margin-bottom: -10px;
-    padding: 1.2em 1em;
-    border-bottom: 0.07142857rem solid #edf1f2;
+    padding: 1.1em;
+    border-bottom: 0.3rem solid #C7D5D8;
+}
+
+#kc-username label, #kc-username.form-group {
+    margin-bottom: 0;
 }
 
 #kc-webauthn-settings-form {
@@ -715,7 +719,6 @@ svg.circled {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1em;
 }
 
 #kc-form-forgotPassword p, #kc-form-forgotPassword span {
@@ -834,6 +837,10 @@ div#kc-social-providers {
     text-align: center;
 }
 
+.login-pf-page .login-pf-header {
+    margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
     .login-pf-page .login-pf-header {
         margin-bottom: 0;
@@ -864,6 +871,10 @@ div#kc-social-providers {
 #kc-content-wrapper .row {
     margin-left: 0;
     margin-right: 0;
+}
+
+#kc-error-message {
+    padding: 1em;
 }
 
 .login-pf-page.login-pf-page-accounts {

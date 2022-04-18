@@ -149,10 +149,8 @@
           </#if>
         </div>
       </div>
-
     </div>
-    <h4 class="alternative-login-socialProviders">${msg("identity-provider-login-label")}</h4>
-    <#nested "socialProviders">
+      <#nested "socialProviders">
   </div>
   <div id="kc-footer" class="${properties.kcFooterClass!}">
            <div class="kc-footer-one">
