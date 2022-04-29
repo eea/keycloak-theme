@@ -968,6 +968,10 @@ div#kc-social-providers {
     font-size: 14px;
 }
 
+.kc-footer-one .section-centered p:first-child {
+    margin-bottom: 0;
+}
+
 .kc-footer-one ul.media-centered {
     list-style: disc;
     margin-top: 0;

@@ -156,15 +156,12 @@
            <div class="kc-footer-one">
              <div class="kc-footer-portal-footer">
                  <div class="section-centered">
-                   <ul class="media-centered">
-                     <li><b>${msg("sectionOne_itemOne_1")}</b> ${msg("sectionOne_itemOne_2")}
-                       <a href="${msg("sectionOne_itemURL")}" title="${msg("sectionOne_itemOne3")}">${msg("sectionOne_itemOne3")}</a>
-                       ${msg("sectionOne_itemOne_4")}</li>
-                      <li><b>${msg("sectionOne_itemTwo_1")}</b> ${msg("sectionOne_itemTwo_2")}
-                        <a href="${msg("sectionOne_itemTwoURL_1")}" title="${msg("sectionOne_itemTwo_3")}">${msg("sectionOne_itemTwo_3")}</a>
-                        ${msg("sectionOne_itemTwo_3")}
-                        <a href="${msg("sectionOne_itemTwoURL_2")}" title="${msg("sectionOne_itemTwo_4")}">${msg("sectionOne_itemTwo_4")}</a></li>
-                   </ul>
+                   <p class="media-centered"><b>${msg("sectionOne_itemOne_1")}</b></p>
+                   <p class="media-centered">
+                       ${msg("sectionOne_itemOne_2")}&nbsp;
+                       <a href="${msg("sectionOne_itemURL")}" title="${msg("sectionOne_itemOne3")}">${msg("sectionOne_itemOne3")}</a> &nbsp;
+                       ${msg("sectionOne_itemOne_4")}
+                   </p>
                  </div>
              </div>
            </div>
