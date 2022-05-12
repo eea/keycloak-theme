@@ -174,6 +174,7 @@
              <div class="portal-colophon">
                <div class="colophon-section eea-software-info">
                    <p class="colophon-links"><i aria-hidden="true" class="fa fa-database icon"></i>${msg("sectionTwo_titleOne")}&nbsp;<a href="${msg("sectionTwo_urlOne")}">${msg("sectionTwo_titleUrlOne")}</a></p>
+                   <p class="colophon-links"><a href="${msg("sectionTwo_urlSix")}" title="${msg("sectionTwo_titleUrlSix")}">${msg("sectionTwo_titleUrlSix")}</a></p>
                    <p class="colophon-links"><a href="${msg("sectionTwo_urlTwo")}" title="${msg("sectionTwo_titleUrlTwo")}">${msg("sectionTwo_titleUrlTwo")}</a></p>
                    <p class="colophon-links"><a href="${msg("sectionTwo_urlThree")}" title="${msg("sectionTwo_titleUrlThree")}">${msg("sectionTwo_titleUrlThree")}</a></p>
                    <p class="colophon-links"><a href="${msg("sectionTwo_urlFour")}">${msg("sectionTwo_titleUrlFour")}</a></p>
