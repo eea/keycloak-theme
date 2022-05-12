@@ -13,7 +13,7 @@
                         <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}
                         <#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("usernameOrEmail")}</#if></label>
 
-                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" placeholder="${msg("usernameOrEmail")}" type="text" autofocus autocomplete="off"
+                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" placeholder="${msg("usernameOrEmailInput")}" type="text" autofocus autocomplete="off"
                                aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                         />
 
