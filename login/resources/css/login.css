@@ -639,6 +639,10 @@ hr {
     padding: 1em;
 }
 
+.noPaddingRight {
+  padding-right: 0 !important;
+}
+
 #kc-buttons-tryAnotherWay {
     border-bottom: 0.07142857rem solid #edf1f2;
     margin-bottom: 1em;

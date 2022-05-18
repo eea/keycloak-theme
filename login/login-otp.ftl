@@ -23,7 +23,7 @@
                 </div>
             </#if>
 
-            <div class="${properties.kcFormGroupClass!}">
+            <div id ="kc-header" class="${properties.kcFormGroupClass!}">
                 <div class="${properties.kcLabelWrapperClass!}">
                     <label for="otp" class="${properties.kcLabelClass!}">${msg("loginOtpOneTime")}</label>
                 </div>
@@ -39,20 +39,20 @@
                     </span>
                 </#if>
             </div>
-        </div>
 
-            <div id="kc-container-buttons" class="kc-containerButtonMargin">
+            <div>
                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                        <div class="${properties.kcFormOptionsWrapperClass!}">
                        </div>
                 </div>
 
-                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!} kc-buttons-tryAnotherWay">
+                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!} noPaddingRight">
                     <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!} button" name="login" id="kc-login" type="submit" aria-label="Log in" title="Log in" value="${msg("doLogIn")}">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" style="width:auto;fill:currentColor" class="icon circled"><path fill-rule="evenodd" d="M18.707 5.293L17.293 6.707 27.586 17 5 17 5 19 27.586 19 17.293 29.293 18.707 30.707 31.414 18z"></path></svg>
                     </button>
                 </div>
             </div>
+        </div>
         </form>
     </#if>
 </@layout.registrationLayout>
