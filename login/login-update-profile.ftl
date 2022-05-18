@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div id="kc-container-buttons" class="${properties.kcFormGroupClass!}">
+            <div id="kc-container-buttons" class="${properties.kcFormGroupClass!} noPadding">
                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                     <div class="${properties.kcFormOptionsWrapperClass!}">
                     </div>

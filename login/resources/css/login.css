@@ -620,6 +620,10 @@ hr {
     margin-left: 10px;
 }
 
+.noPadding {
+  padding: 0 !important;
+}
+
 #kc-container-buttons {
     border-top: 0.07142857rem solid #edf1f2;
 }
