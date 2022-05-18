@@ -81,13 +81,11 @@
                 </div>
             </div>
 
-            <div class="${properties.kcFormGroupClass!}">
+            <div id="kc-container-buttons" class="${properties.kcFormGroupClass!}">
                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                     <div class="${properties.kcFormOptionsWrapperClass!}">
                     </div>
                 </div>
-            </div>
-            <div id="kc-container-buttons">
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
                     <#if isAppInitiatedAction??>
                     <a id="login-form-cancel" aria-label="Cancel" title="Cancel" class="right floated button" role="button" value="${msg("doCancel")}">

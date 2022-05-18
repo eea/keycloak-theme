@@ -46,7 +46,6 @@
             </#if>
             <li>
                 <p>${msg("loginTotpStep3")}</p>
-                <p>${msg("loginTotpStep3DeviceName")}</p>
             </li>
         </ol>
 
