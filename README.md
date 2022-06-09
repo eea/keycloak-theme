@@ -20,7 +20,7 @@ The themes for the master realm are available at the following url:
 http://localhost:8080/auth/admin/master/console/#/realms/master/theme-settings
 ```
 
-Update keycloak theme
+## Update keycloak theme
 
 In order to update the EEA's keycloak theme, the following steps are necessary:
 
